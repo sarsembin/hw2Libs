@@ -20,3 +20,11 @@ func Test_squareRoot(t *testing.T) {
 		t.Errorf("Result of SquareRoot was incorrect, got: %v, want: %v\n", got, want)
 	}
 }
+
+func Test_generateUUID(t *testing.T) {
+	got := len(GenerateUUID(10))
+	want := 10
+	if got != want {
+		t.Errorf("Result of GenerateUUID was incorrect, got: %v, want: %v\n", got, want)
+	}
+}

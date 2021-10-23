@@ -1,6 +1,9 @@
 package hw2Libs
 
-import "math"
+import (
+	"math"
+	"github.com/twharmon/gouid"
+)
 
 func RegisterFlip(s string) string{
 	newS := ""
@@ -16,4 +19,8 @@ func RegisterFlip(s string) string{
 
 func SquareRoot(num float64) float64 {
 	return math.Sqrt(num)
+}
+
+func GenerateUUID(length int) string{
+	return gouid.String(length, gouid.MixedCaseAlpha)
 }
