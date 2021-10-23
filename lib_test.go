@@ -12,3 +12,11 @@ func Test_registerFlip(t *testing.T) {
 		t.Errorf("Result of registerFlip was incorrect, got: %v, want: %v\n", got, want)
 	}
 }
+
+func Test_squareRoot(t *testing.T) {
+	got := SquareRoot(25.0)
+	want := 5.0
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("Result of SquareRoot was incorrect, got: %v, want: %v\n", got, want)
+	}
+}

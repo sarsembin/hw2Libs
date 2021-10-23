@@ -1,5 +1,7 @@
 package hw2Libs
 
+import "math"
+
 func RegisterFlip(s string) string{
 	newS := ""
 	for i := range s {
@@ -10,4 +12,8 @@ func RegisterFlip(s string) string{
 		}
 	}
 	return newS
+}
+
+func SquareRoot(num float64) float64 {
+	return math.Sqrt(num)
 }
